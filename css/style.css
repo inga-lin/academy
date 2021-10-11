@@ -1,1 +1,16 @@
-
+html, body{
+	margin: 0;
+	padding: 0;
+}
+.mobile, .boxis-mobile{
+	display: none;
+}
+/* mobile */
+@media only screen and (max-width:1000px){ /*480*/
+	.desktop, .it, .boxis, .bloc .fisma, .urban {
+		display: none;	
+}
+        .mobile, .boxis-mobile {
+		display: block;
+	}
+}
