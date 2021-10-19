@@ -1,16 +1,165 @@
 html, body{
 	margin: 0;
-	padding: 0;
+
 }
-.mobile, .boxis-mobile{
+
+p, strong, a, h1, h2, h3, h4, h5, button{
+	font-family: 'Inter', sans-serif;
+}
+
+p, h1, h2, h3, h4, h5{
+	color: rgb(56, 54, 54);
+}
+
+/* nav juosta*/
+
+header{
+	padding: 16px 24px; /* butina kad graziai sonai susitraukinetu*/
+}
+
+.juosta .logo img{
+	height: 32px;
+	width: auto;
+}
+
+.juosta .logo a {
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+}
+
+.logo span{
+	color: rgb(124, 121, 121);
+	font-weight: 300;
+	position: relative;
+	bottom: 8px;
+}
+
+.logo strong{
+	font-weight: 500;
+	position: relative;
+	bottom: 8px;	
+}
+.juosta .desktop a{
+	text-decoration: none;
+	color: rgb(56, 54, 54);
+
+}
+
+.juosta .desktop li{
+	display: inline;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.juosta .desktop li .in{
+	padding: 0 8px;
+}
+
+#sing{
+	padding-right: 0;
+	padding-left: 8px;
+}
+
+.mobile{
 	display: none;
 }
-/* mobile */
-@media only screen and (max-width:1000px){ /*480*/
-	.desktop, .it, .boxis, .bloc .fisma, .urban {
-		display: none;	
+
+.juosta{
+	display: flex;
+	justify-content: space-between;
+	height: 32px;
 }
-        .mobile, .boxis-mobile {
-		display: block;
+
+.desktop ul{
+	margin-bottom: 14px;
+	margin-top: 8px;
+}
+
+@media only screen and (max-width:768px){ /*480*/
+	.juosta .logo, .juosta .desktop{
+		display: none;
 	}
+
+	.juosta{
+		padding: 0;
+	}
+	.juosta .mobile {
+		display: inline;
+		padding-right: 0px;
+		
+	}
+
+	.juosta .mobile a{
+		padding: 0 35px;
+	}
+
+	header{
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	
 }
+
+/*backgraund1*/
+
+.content1 {
+	background: rgb(206, 203, 203);
+	padding: 32px 0 32px 24px;
+}
+
+.backgraund1{
+	display: flex;
+	justify-content: space-between;
+}
+.content1 .backgraund1 img{
+	width: 60%;
+	height: 40%;
+}
+
+.content1 .backgraund1 .learn{
+	padding-left: 24px;
+	padding-top: 68px;
+	padding-right: 48px;
+}
+
+.content1 .backgraund1 .learn h1{
+	font-size: 50px;
+}
+
+.content1 .backgraund1 .learn p{
+	font-size: 26px;
+	font-weight: 500;
+}
+
+.content1 .backgraund1 .learn .button{
+	padding-top: 8px;
+	padding-bottom: 8px;
+	background: rgb(56, 54, 54);
+	text-align: center;
+}
+
+.content1 .backgraund1 .learn a{
+	text-decoration: none;
+	color: white;
+}
+
+/*backgraund2*/
+
+.content2 {
+	padding: 32px 0 32px 24px;
+}
+
+.content2 .backgraund2 .it img{
+	width: 60%;
+	height: auto;
+}
+
+/*backgraund3*/
+/*backgraund4*/
+
+.backgraund4 video{
+	width: 60%;
+}
+
