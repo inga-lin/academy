@@ -76,22 +76,26 @@ header{
 	margin-top: 8px;
 }
 
-@media only screen and (max-width:768px){ /*480*/
+@media only screen and (max-width:480px){ /*480*/
 	.juosta .logo, .juosta .desktop{
 		display: none;
 	}
 
-	.juosta{
-		padding: 0;
+	.header{
+		padding-left: 3px;
+		
+		
 	}
 	.juosta .mobile {
 		display: inline;
-		padding-right: 0px;
+		display: flex;
+		justify-content: space-between;
+		width: 476px;
 		
 	}
 
 	.juosta .mobile a{
-		padding: 0 35px;
+		padding: 0 20px;
 	}
 
 	header{
@@ -143,6 +147,39 @@ header{
 .content1 .backgraund1 .learn a{
 	text-decoration: none;
 	color: white;
+}
+
+@media only screen and (max-width:480px){
+	.content1{
+		padding: 0;
+		display: flex;
+	}
+
+	.backgraund1{
+		flex-direction: column;
+		
+	}
+
+	.content1 .backgraund1 img{
+		width: 100%;
+		height: auto;
+	}
+
+	.content1 .backgraund1 .learn{
+		padding: 32px 16px 32px 16px;
+	}
+
+	.content1 .backgraund1 .learn h1{
+		margin: 0;
+		font-size: 30px;
+	}
+
+	.content1 .backgraund1 .learn p{
+		margin: 0;
+		padding-top: 32px;
+		padding-bottom: 24px;
+		font-size: 20px;
+	}
 }
 
 /*backgraund2*/
