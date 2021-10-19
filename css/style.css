@@ -200,3 +200,11 @@ header{
 	width: 60%;
 }
 
+@media only screen and (max-width:1000px){ /*480*/
+	.desktop, .it, .boxis, .bloc .fisma, .urban {
+		display: none;	
+}
+        .mobile, .boxis-mobile {
+		display: block;
+	}
+}
