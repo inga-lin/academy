@@ -1,6 +1,5 @@
 html, body{
 	margin: 0;
-
 }
 
 p, strong, a, h1, h2, h3, h4, h5, button{
@@ -115,7 +114,7 @@ header{
 
 .backgraund1{
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 .content1 .backgraund1 img{
 	width: 60%;
@@ -156,8 +155,7 @@ header{
 	}
 
 	.backgraund1{
-		flex-direction: column;
-		
+		flex-direction: column;	
 	}
 
 	.content1 .backgraund1 img{
@@ -179,6 +177,7 @@ header{
 		padding-top: 32px;
 		padding-bottom: 24px;
 		font-size: 20px;
+		line-height: 30px;
 	}
 }
 
@@ -188,23 +187,217 @@ header{
 	padding: 32px 0 32px 24px;
 }
 
-.content2 .backgraund2 .it img{
+
+.content2 .backgraund2 .it{
 	width: 60%;
+	
+}
+
+.content2 .backgraund2 .it img{
+	width: 100%;
+}
+
+.content2 .backgraund2 {
+	display: flex;
+	justify-content: space-around;
+}
+
+.content2 .backgraund2 h3{
+	text-align: left;
+}
+.content2 .backgraund2 h4{
+        font-size: 25px;
+	font-weight: 600;
+	
+}
+
+.content2 .backgraund2 p{
+	font-size: 20px;
+}
+
+.content2 .backgraund2 a{
+	text-decoration-line: none;
+	color: blue;
+}
+
+.content2 .backgraund2 .it2{
+	width: 38%;
+	padding-left: 24px;
+}
+
+.content2 .backgraund2 .it2 .it2-img1 .desktop img{
+	width: 191px;
 	height: auto;
+	padding: 0px 16px 32px 16px;
+}
+
+.content2 .backgraund2 .it2 .it2-img1{
+	display: flex;
+	justify-content: space-between;
 }
 
 /*backgraund3*/
-/*backgraund4*/
 
-.backgraund4 video{
-	width: 60%;
+.content3{
+	background: rgb(206, 203, 203);
+}
+.boxis{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 32px 72px 0px 72px;
 }
 
-@media only screen and (max-width:1000px){ /*480*/
+.box{
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30%;
+	height: auto;
+	background: white;
+	margin-bottom: 32px;
+}
+
+.box img{
+	height: auto;
+}
+
+.box h4{
+	padding-top: 16px;
+	padding-left: 16px;
+	margin: 0;
+	font-size: 25px;
+	font-weight: 600;
+}
+
+.box p{
+	padding-top: 8px;
+	padding-bottom: 24px;
+	padding-left: 16px;
+	margin: 0;
+	font-size: 20px;
+}
+
+.box .cur{
+	margin: 0;
+	padding-top: 8px;
+	padding-left: 16px;
+	font-size: 20px;
+}
+
+h3 {
+	text-align: center;
+	padding-top: 32px;
+	font-size: 43px;
+	margin: 0;
+}
+
+.mobile, .boxis-mobile {
+	display: none;
+}
+
+/*backgraund4*/
+
+.content4{
+	background: white;
+	padding: 0px 0px 32px 24px;
+}
+
+.content4 .backgraund4 .thesis{
+	padding-bottom: 32px;
+}
+.content4 .backgraund4 .thesis1 .bloc1{
+	width: 60%;	
+}
+
+.content4 .backgraund4 .thesis1 .bloc1 video{
+	width: 100%;
+	height: auto;	
+}
+
+.content4 .backgraund4 .thesis1 .bloc {
+	width: 35%;
+}
+
+.content4 .backgraund4 .fismas img{
+	width: 35%;
+	height: 35%;
+	padding: 16px;
+}
+
+.content4 .backgraund4 .thesis1 .fismas{
+	display: flex;
+	justify-content: space-between;
+}
+
+.content4 .backgraund4 .thesis1 .bloc .fisma1{
+	width: 65%;
+}
+
+.content4 .backgraund4 .thesis1 .bloc .fisma1 h4{
+	font-size: 25px;
+	font-weight: 600;
+}
+
+.content4 .backgraund4 .thesis1 .bloc .fisma1 p{
+	font-size: 20px;
+}
+
+.content4 .backgraund4 .thesis1 {
+	display: flex;
+	justify-content: space-around;
+}
+
+.content4 .backgraund4 .urban{
+	width: 60%;
+}
+.content4 .backgraund4 .urban h4{
+	margin: 0;
+	padding-top: 24px;
+	padding-bottom: 8px;
+	font-size: 25px;
+	font-weight: 600;
+}
+
+.content4 .backgraund4 .urban p{
+	margin: 0;
+	font-size: 20px;
+}
+
+@media only screen and (max-width:500px){ /*480*/
 	.desktop, .it, .boxis, .bloc .fisma, .urban {
 		display: none;	
 }
         .mobile, .boxis-mobile {
 		display: block;
 	}
+}
+
+/*footer*/
+
+footer{
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer p{
+	margin: 0;
+	padding: 16px 0 16px 24px;
+}
+
+.footer ul{
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer ul a{
+	padding: 16px;
+	text-decoration: none;
+	color: rgb(56, 54, 54);
+}
+
+.footer ul li{
+	display: inline;
+	color: rgb(56, 54, 54);
+
 }
