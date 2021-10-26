@@ -75,33 +75,22 @@ header{
 	margin-top: 8px;
 }
 
-@media only screen and (max-width:480px){ /*480*/
+@media only screen and (max-width:600px){ /*480*/
 	.juosta .logo, .juosta .desktop{
 		display: none;
 	}
 
-	.header{
-		padding-left: 3px;
-		
-		
-	}
 	.juosta .mobile {
 		display: inline;
 		display: flex;
 		justify-content: space-between;
-		width: 476px;
+		width: 600px;
 		
 	}
 
 	.juosta .mobile a{
 		padding: 0 20px;
 	}
-
-	header{
-		padding-left: 0;
-		padding-right: 0;
-	}
-
 	
 }
 
@@ -148,7 +137,7 @@ header{
 	color: white;
 }
 
-@media only screen and (max-width:480px){
+@media only screen and (max-width:600px){
 	.content1{
 		padding: 0;
 		display: flex;
@@ -236,6 +225,39 @@ header{
 	justify-content: space-between;
 }
 
+@media only screen and (max-width:600px){ /*uzsirasyti aip sugrinti flex*/
+	.content2{
+		padding: 16px 16px 32px 16px;
+	}
+
+	.backgraund2{
+		display: flex;
+	}
+
+	.backgraund2 .it2{
+		flex-direction: column;
+	}
+
+	.it2{
+		padding: 0;
+		display: flex;
+		
+	}
+
+	.it2-img1{
+		padding-left: 0px;
+		flex-direction: column;
+	}
+
+	.it2-img1 .mobile img{
+		height: auto;
+		width: 600px;
+		
+	}
+
+	
+}
+
 /*backgraund3*/
 
 .content3{
@@ -296,6 +318,31 @@ h3 {
 	display: none;
 }
 
+@media only screen and (max-width:600px){
+	.content3{
+		background: white;
+		padding: 32px 16px 24px 16px;
+	}
+
+	.content3 .start h3{
+		padding-bottom: 16px;
+	}
+
+	.content3 .backgraund3 .bot button{
+		padding-top: 16px;
+		padding-bottom: 24px;
+		padding-left: 16px;
+		width: 100%;
+		font-size: 25px;
+		font-weight: 600;
+		text-align: left;
+		background:  rgb(206, 203, 203);
+	}
+
+	.content3 .backgraund3 .bot{
+		padding-bottom: 8px;
+	}
+}
 /*backgraund4*/
 
 .content4{
@@ -364,8 +411,29 @@ h3 {
 	font-size: 20px;
 }
 
-@media only screen and (max-width:500px){ /*480*/
-	.desktop, .it, .boxis, .bloc .fisma, .urban {
+@media only screen and (max-width:600px){
+	.content4{
+		padding: 32px 0px 24px 0px;
+	}
+
+	.content4 h3{
+		padding-top: 0px;
+	}
+
+	.content4 .backgraund4 .thesis{
+		padding-bottom: 16px;
+	}
+	
+	.content4 .backgraund4 .thesis1 .bloc1 video{
+		width: 600px;
+		height: auto;
+		margin-left: -130px;
+	}
+
+}
+
+@media only screen and (max-width:600px){ /*480*/
+	.desktop, .it, .boxis, .bloc, .urban, .footer a {
 		display: none;	
 }
         .mobile, .boxis-mobile {
