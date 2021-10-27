@@ -92,6 +92,27 @@ header{
 	}
 }
 
+@media only screen and (min-width:600px) and (max-width:700px){ /*480*/
+	.juosta .logo, .juosta .mobile .by{
+		display: none;
+	}
+
+	.juosta .logo{
+		display: inline;
+	}
+
+	.juosta .mobile {
+		display: inline;
+		display: flex;
+		justify-content: space-between;
+			
+	}
+
+	.juosta .mobile a{
+		padding: 0 20px;
+	}
+}
+
 /*backgraund1*/
 
 .content1 {
@@ -137,6 +158,39 @@ header{
 }
 
 @media only screen and (max-width:600px){
+	.content1{
+		padding: 0;
+		display: flex;
+	}
+
+	.backgraund1{
+		flex-direction: column;	
+	}
+
+	.content1 .backgraund1 img{
+		width: 100%;
+		height: auto;
+	}
+
+	.content1 .backgraund1 .learn{
+		padding: 32px 16px 32px 16px;
+	}
+
+	.content1 .backgraund1 .learn h1{
+		margin: 0;
+		font-size: 30px;
+	}
+
+	.content1 .backgraund1 .learn p{
+		margin: 0;
+		padding-top: 32px;
+		padding-bottom: 24px;
+		font-size: 20px;
+		line-height: 30px;
+	}
+}
+
+@media only screen and (max-width:700px){
 	.content1{
 		padding: 0;
 		display: flex;
