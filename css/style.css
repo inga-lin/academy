@@ -39,10 +39,10 @@ header{
 	position: relative;
 	bottom: 8px;	
 }
+
 .juosta .desktop a{
 	text-decoration: none;
 	color: rgb(56, 54, 54);
-
 }
 
 .juosta .desktop li{
@@ -84,14 +84,12 @@ header{
 		display: inline;
 		display: flex;
 		justify-content: space-between;
-		width: 600px;
-		
+		width: 600px;	
 	}
 
 	.juosta .mobile a{
 		padding: 0 20px;
 	}
-	
 }
 
 /*backgraund1*/
@@ -105,6 +103,7 @@ header{
 	display: flex;
 	justify-content: space-around;
 }
+
 .content1 .backgraund1 img{
 	width: 60%;
 	height: 40%;
@@ -176,10 +175,8 @@ header{
 	padding: 32px 0 32px 24px;
 }
 
-
 .content2 .backgraund2 .it{
-	width: 60%;
-	
+	width: 60%;	
 }
 
 .content2 .backgraund2 .it img{
@@ -194,10 +191,10 @@ header{
 .content2 .backgraund2 h3{
 	text-align: left;
 }
+
 .content2 .backgraund2 h4{
         font-size: 25px;
-	font-weight: 600;
-	
+	font-weight: 600;	
 }
 
 .content2 .backgraund2 p{
@@ -227,35 +224,43 @@ header{
 
 @media only screen and (max-width:600px){ /*uzsirasyti aip sugrinti flex*/
 	.content2{
-		padding: 16px 16px 32px 16px;
+		padding: 16px 16px 32px 16px;	
 	}
 
-	.backgraund2{
-		display: flex;
+	.content2 .backgraund2{
+		display: inline;	
 	}
 
-	.backgraund2 .it2{
-		flex-direction: column;
+	.content2 .backgraund2 .it2{
+		padding: 0px;
+		margin: 0px;
+		width: 100%;
 	}
 
-	.it2{
-		padding: 0;
-		display: flex;
-		
+	.content2 .backgraund2 .it2 .it2-img1 .date{
+		padding: 16px 16px 64px 16px;
 	}
 
-	.it2-img1{
+	.content2 .backgraund2 .it2 .it2-img1 .campus{
+		padding: 16px 16px 64px 16px;
+	}
+
+	.content2 .backgraund2 .it2 .it2-img1 .guest{
+		padding: 16px 16px 0px 16px;
+	}
+
+	.content2 .backgraund2 h4{
+		margin: 0px;
+	}
+
+	.content2 .backgraund2 .it2 .it2-img1{
 		padding-left: 0px;
 		flex-direction: column;
 	}
 
-	.it2-img1 .mobile img{
-		height: auto;
-		width: 600px;
-		
+	.content2 .backgraund2 .it2 .it2-img1 .mobile img{
+		width: 100%;	
 	}
-
-	
 }
 
 /*backgraund3*/
@@ -263,6 +268,7 @@ header{
 .content3{
 	background: rgb(206, 203, 203);
 }
+
 .boxis{
 	display: flex;
 	justify-content: space-between;
@@ -326,6 +332,7 @@ h3 {
 
 	.content3 .start h3{
 		padding-bottom: 16px;
+		padding-top: 0;
 	}
 
 	.content3 .backgraund3 .bot button{
@@ -353,6 +360,7 @@ h3 {
 .content4 .backgraund4 .thesis{
 	padding-bottom: 32px;
 }
+
 .content4 .backgraund4 .thesis1 .bloc1{
 	width: 60%;	
 }
@@ -398,6 +406,7 @@ h3 {
 .content4 .backgraund4 .urban{
 	width: 60%;
 }
+
 .content4 .backgraund4 .urban h4{
 	margin: 0;
 	padding-top: 24px;
@@ -424,18 +433,19 @@ h3 {
 		padding-bottom: 16px;
 	}
 	
-	.content4 .backgraund4 .thesis1 .bloc1 video{
-		width: 600px;
-		height: auto;
-		margin-left: -130px;
+	.content4 .backgraund4 .thesis1 .bloc1{
+		width: 100%;
 	}
 
+	.content4 .backgraund4 .thesis1 .bloc1 video{
+		width: 100%;	
+	}
 }
 
 @media only screen and (max-width:600px){ /*480*/
 	.desktop, .it, .boxis, .bloc, .urban, .footer a {
 		display: none;	
-}
+        }
         .mobile, .boxis-mobile {
 		display: block;
 	}
