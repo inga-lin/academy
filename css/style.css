@@ -263,6 +263,47 @@ header{
 	}
 }
 
+@media only screen and (max-width:700px){ /*uzsirasyti aip sugrinti flex*/
+	.content2{
+		padding: 16px 16px 32px 16px;	
+	}
+
+	.content2 .backgraund2{
+		display: inline;	
+	}
+
+	.content2 .backgraund2 .it2{
+		padding: 0px;
+		margin: 0px;
+		width: 100%;
+	}
+
+	.content2 .backgraund2 .it2 .it2-img1 .date{
+		padding: 16px 16px 64px 16px;
+	}
+
+	.content2 .backgraund2 .it2 .it2-img1 .campus{
+		padding: 16px 16px 64px 16px;
+	}
+
+	.content2 .backgraund2 .it2 .it2-img1 .guest{
+		padding: 16px 16px 0px 16px;
+	}
+
+	.content2 .backgraund2 h4{
+		margin: 0px;
+	}
+
+	.content2 .backgraund2 .it2 .it2-img1{
+		padding-left: 0px;
+		flex-direction: column;
+	}
+
+	.content2 .backgraund2 .it2 .it2-img1 .mobile img{
+		width: 100%;	
+	}
+}
+
 /*backgraund3*/
 
 .content3{
@@ -350,6 +391,34 @@ h3 {
 		padding-bottom: 8px;
 	}
 }
+
+@media only screen and (max-width:700px){
+	.content3{
+		background: white;
+		padding: 32px 16px 24px 16px;
+	}
+
+	.content3 .start h3{
+		padding-bottom: 16px;
+		padding-top: 0;
+	}
+
+	.content3 .backgraund3 .bot button{
+		padding-top: 16px;
+		padding-bottom: 24px;
+		padding-left: 16px;
+		width: 100%;
+		font-size: 25px;
+		font-weight: 600;
+		text-align: left;
+		background:  rgb(206, 203, 203);
+	}
+
+	.content3 .backgraund3 .bot{
+		padding-bottom: 8px;
+	}
+}
+
 /*backgraund4*/
 
 .content4{
@@ -443,6 +512,37 @@ h3 {
 }
 
 @media only screen and (max-width:600px){ /*480*/
+	.desktop, .it, .boxis, .bloc, .urban, .footer a {
+		display: none;	
+        }
+        .mobile, .boxis-mobile {
+		display: block;
+	}
+}
+
+@media only screen and (max-width:700px){
+	.content4{
+		padding: 32px 0px 24px 0px;
+	}
+
+	.content4 h3{
+		padding-top: 0px;
+	}
+
+	.content4 .backgraund4 .thesis{
+		padding-bottom: 16px;
+	}
+	
+	.content4 .backgraund4 .thesis1 .bloc1{
+		width: 100%;
+	}
+
+	.content4 .backgraund4 .thesis1 .bloc1 video{
+		width: 100%;	
+	}
+}
+
+@media only screen and (max-width:700px){ /*480*/
 	.desktop, .it, .boxis, .bloc, .urban, .footer a {
 		display: none;	
         }
