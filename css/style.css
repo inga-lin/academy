@@ -190,7 +190,7 @@ header{
 	}
 }
 
-@media only screen and (max-width:700px){
+@media only screen and (min-width:600px) and (max-width:700px){
 	.content1{
 		padding: 0;
 		display: flex;
@@ -207,6 +207,54 @@ header{
 
 	.content1 .backgraund1 .learn{
 		padding: 32px 16px 32px 16px;
+		text-align: center;
+	}
+
+	.content1 .backgraund1 .learn .button{
+		width: 50%;
+		margin: auto;
+	}
+
+	.content1 .backgraund1 .learn h1{
+		margin: 0;
+		font-size: 30px;
+	}
+
+	.content1 .backgraund1 .learn p{
+		margin: 0;
+		padding-top: 32px;
+		padding-bottom: 24px;
+		font-size: 20px;
+		line-height: 30px;
+	}
+}
+
+@media only screen and (min-width:700px) and (max-width:1050px){
+	.content1{
+		padding: 0;
+		display: flex;
+	}
+
+	.backgraund1{
+		flex-direction: column;	
+		padding-left: 24px;
+		padding-right: 24px;
+		padding-top: 24px;
+	}
+
+	.content1 .backgraund1 img{
+		width: 100%;
+		height: auto;
+	}
+
+	.content1 .backgraund1 .learn{
+		padding: 32px 16px 32px 16px;
+		text-align: center;
+	}
+
+	.content1 .backgraund1 .learn .button{
+		width: 50%;
+		margin: auto;
 	}
 
 	.content1 .backgraund1 .learn h1{
@@ -252,7 +300,7 @@ header{
 }
 
 .content2 .backgraund2 p{
-	font-size: 20px;
+	font-size: 18px;
 }
 
 .content2 .backgraund2 a{
@@ -273,48 +321,7 @@ header{
 
 .content2 .backgraund2 .it2 .it2-img1{
 	display: flex;
-	justify-content: space-between;
-}
-
-@media only screen and (max-width:600px){ /*uzsirasyti aip sugrinti flex*/
-	.content2{
-		padding: 16px 16px 32px 16px;	
-	}
-
-	.content2 .backgraund2{
-		display: inline;	
-	}
-
-	.content2 .backgraund2 .it2{
-		padding: 0px;
-		margin: 0px;
-		width: 100%;
-	}
-
-	.content2 .backgraund2 .it2 .it2-img1 .date{
-		padding: 16px 16px 64px 16px;
-	}
-
-	.content2 .backgraund2 .it2 .it2-img1 .campus{
-		padding: 16px 16px 64px 16px;
-	}
-
-	.content2 .backgraund2 .it2 .it2-img1 .guest{
-		padding: 16px 16px 0px 16px;
-	}
-
-	.content2 .backgraund2 h4{
-		margin: 0px;
-	}
-
-	.content2 .backgraund2 .it2 .it2-img1{
-		padding-left: 0px;
-		flex-direction: column;
-	}
-
-	.content2 .backgraund2 .it2 .it2-img1 .mobile img{
-		width: 100%;	
-	}
+	justify-content: flex-start; /*sulygina teksta prie nuotraukos, nepalieka keistu tarpu*/
 }
 
 @media only screen and (max-width:700px){ /*uzsirasyti aip sugrinti flex*/
@@ -358,6 +365,72 @@ header{
 	}
 }
 
+@media only screen and (min-width:700px) and (max-width:1050px){ /*uzsirasyti aip sugrinti flex*/
+	.content2{
+		padding: 16px 16px 32px 16px;	
+	}
+
+	.content2 .backgraund2{
+		display: inline;	
+	}
+
+	.content2 .backgraund2 .it{
+		width: 100%;
+	}
+
+	.content2 .backgraund2 .it2{
+		padding: 0px;
+		margin: 0px;
+		width: 100%;
+	}
+
+	.content2 .backgraund2 .it2 .it2-img1 .date{
+		padding: 16px;
+		
+	}
+
+	.content2 .backgraund2 .it2 .it2-img1 .campus{
+		padding: 16px;
+		
+	}
+
+	.content2 .backgraund2 .it2 .it2-img1 .guest{
+		padding: 16px;
+		
+	}
+
+	.content2 .backgraund2 h4{
+		margin: 0px;
+	}
+
+	.content2 .backgraund2 .it2 .it2-img1{
+		padding-left: 20px;
+		padding-right: 20px;
+		
+	}
+
+	.content2 .backgraund2 .it2 .it2-img1 .desktop{
+		display: none;
+	}
+
+	.content2 .backgraund2 .it2 .it2-img1 .mobile{
+		display: inline;
+		
+	}
+
+	.content2 .backgraund2 .it2 .it2-img1 .mobile img{
+		width: 420px;
+		height: auto;
+	}
+
+	.content2 .backgraund2 .it2 .it2-img1{
+		justify-content: flex-start;
+	}
+
+}
+
+
+
 /*backgraund3*/
 
 .content3{
@@ -374,7 +447,7 @@ header{
 .box{
 	display: inline-flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: flex-start;
 	width: 30%;
 	height: auto;
 	background: white;
@@ -398,7 +471,7 @@ header{
 	padding-bottom: 24px;
 	padding-left: 16px;
 	margin: 0;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 .box .cur{
@@ -446,7 +519,7 @@ h3 {
 	}
 }
 
-@media only screen and (max-width:700px){
+@media only screen and (min-width:600px) and (max-width:700px){
 	.content3{
 		background: white;
 		padding: 32px 16px 24px 16px;
@@ -464,12 +537,19 @@ h3 {
 		width: 100%;
 		font-size: 25px;
 		font-weight: 600;
-		text-align: left;
+		text-align: center;
 		background:  rgb(206, 203, 203);
 	}
 
 	.content3 .backgraund3 .bot{
 		padding-bottom: 8px;
+	}
+}
+
+@media only screen and (min-width:700px) and (max-width:1050px){
+	.box{
+		width: 48%;
+		height: auto;
 	}
 }
 
@@ -518,7 +598,7 @@ h3 {
 }
 
 .content4 .backgraund4 .thesis1 .bloc .fisma1 p{
-	font-size: 20px;
+	font-size: 18px;
 }
 
 .content4 .backgraund4 .thesis1 {
@@ -540,7 +620,7 @@ h3 {
 
 .content4 .backgraund4 .urban p{
 	margin: 0;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 @media only screen and (max-width:600px){
@@ -565,6 +645,50 @@ h3 {
 	}
 }
 
+@media only screen and (min-width:700px) and (max-width:1050px){
+	.content4 .backgraund4 .thesis1{
+		flex-direction: column;
+	}
+
+	.content4{
+		padding: 32px 0px 0px 0px;
+	}
+
+	.content4 .backgraund4 .bloc{
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.content4 .backgraund4 .thesis1 .bloc1{
+		width: 100%;
+	}
+
+	.content4 .backgraund4 .thesis1 .bloc{
+		width: 100%;	
+	}
+
+	.content4 .backgraund4 .thesis1 .bloc .fismas{
+		width: 50%;
+	}
+
+	.content4 .backgraund4 .thesis1 .bloc1 video{
+		width: 100%;	
+	}
+
+	.content4 .backgraund4 .fismas img{
+		width: 50%;
+		height: auto;
+	}
+
+	.content4 .backgraund4 .thesis1 .bloc .fisma1{
+		margin: auto;
+	}
+
+	.content4 .backgraund4 .urban{
+		width: 100%;
+	}
+}
+
 @media only screen and (max-width:600px){ /*480*/
 	.desktop, .it, .boxis, .bloc, .urban, .footer a {
 		display: none;	
@@ -574,7 +698,7 @@ h3 {
 	}
 }
 
-@media only screen and (max-width:700px){
+@media only screen and (min-width:600px) and (max-width:700px){
 	.content4{
 		padding: 32px 0px 24px 0px;
 	}
@@ -596,7 +720,7 @@ h3 {
 	}
 }
 
-@media only screen and (max-width:700px){ /*480*/
+@media only screen and (min-width:600px) and (max-width:700px){ /*480*/
 	.desktop, .it, .boxis, .bloc, .urban, .footer a {
 		display: none;	
         }
